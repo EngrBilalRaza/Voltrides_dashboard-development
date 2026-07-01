@@ -594,9 +594,7 @@ def render_flow_data_quality(data: dict, controls: dict, result: dict):
     section_note("This page is the audit layer: it keeps detailed workbook data, feeder mapping, schema checks, and assumptions separate from the executive decision pages.")
 
     section_title("Assembly feeder map", icon="①")
-    section_note(
-        "This upgraded feeder map uses high-contrast colors, clean MA-wise grouping, and readable text so the SA → MA flow can be audited without relying on light grey or blurry chart labels."
-    )
+    
     flow_left, flow_right = st.columns([1.35, 1.0])
     with flow_left:
         with st.container(border=True):
