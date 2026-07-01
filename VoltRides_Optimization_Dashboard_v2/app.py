@@ -511,7 +511,7 @@ def render_sensitivity_risk(data: dict, controls: dict, result: dict):
 
 def render_layout_space(data: dict, result: dict):
     st.header("Plant Layout & Space")
-    section_note("Plant blocks use short labels to avoid text overflow. Full details are available in hover text, tables, and data quality views.")
+    section_note("Plant layout and space utilization map.")
     best = result["best"]
     bottlenecks = best["Bottleneck"].split(", ") if best else result["current_balance"].get("bottlenecks", [])
     c1, c2 = st.columns([1.45, 1.0])
