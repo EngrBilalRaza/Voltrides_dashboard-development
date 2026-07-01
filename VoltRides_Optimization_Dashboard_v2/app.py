@@ -595,7 +595,7 @@ def render_flow_data_quality(data: dict, controls: dict, result: dict):
 
     section_title("Assembly feeder map", icon="①")
     section_note(
-        "This upgraded feeder map uses high-contrast colors, clean MA-wise grouping, and readable text so the SA → MA flow can be audited without relying on light grey or blurry chart labels."
+        "MA-wise grouping, and subassemble to mainassemble (SA → MA) flow."
     )
     flow_left, flow_right = st.columns([1.35, 1.0])
     with flow_left:
