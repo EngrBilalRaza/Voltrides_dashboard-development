@@ -531,21 +531,6 @@ def main():
     controls = render_sidebar(data)
     result = model_run(data, controls)
 
-    st.markdown(
-        """
-        <div class="vr-tab-guide">
-            <span class="vr-tab-chip"><span class="vr-tab-dot" style="background:#2563EB"></span>Executive Cockpit</span>
-            <span class="vr-tab-chip"><span class="vr-tab-dot" style="background:#7C3AED"></span>Optimization Model</span>
-            <span class="vr-tab-chip"><span class="vr-tab-dot" style="background:#16A34A"></span>Line Balance</span>
-            <span class="vr-tab-chip"><span class="vr-tab-dot" style="background:#EA580C"></span>OPEX & Cost Drivers</span>
-            <span class="vr-tab-chip"><span class="vr-tab-dot" style="background:#DC2626"></span>Sensitivity & Risk</span>
-            <span class="vr-tab-chip"><span class="vr-tab-dot" style="background:#0891B2"></span>Plant Layout</span>
-            <span class="vr-tab-chip"><span class="vr-tab-dot" style="background:#64748B"></span>Data Quality</span>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
-
     tabs = st.tabs([
         "🏛️ Executive Cockpit",
         "⚙️ Optimization Model",
